@@ -9,6 +9,6 @@ jobs:
     steps:
       - name: "Checking context variable"
         run: |
-          echo "Repository Name : S[{ github.repository }]"
-          echo "workflow Nane : $[{ github.workflow }}"
-          echo "Triggered by : $[{ github.triggering_actor })"
+          echo "Repository Name : S{{ github.repository }}"
+          echo "workflow Nane : ${{ github.workflow }}"
+          echo "Triggered by : ${{ github.triggering_actor }}"
